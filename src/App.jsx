@@ -59,7 +59,7 @@ function App() {
       
       <Nav latitude={latitude} longitude={longitude}/>
 
-      <section className='flex flex-wrap p-5 justify-center bg-background-pattern'>
+      <section className='flex flex-wrap p-5 justify-center'>
         <CurrentWeather current_weather={weatherData.current_weather} />
         <Forecast future_weather={weatherData.daily} />
         <FutureTemperature future_weather={weatherData.daily} />
