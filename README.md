@@ -1,8 +1,14 @@
-# React + Vite
+# What Is My Forecast?
+Available at: https://whatismyforecast.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview:
+What Is My Forecast is a tool for finding the current and future forecast at your location.
 
-Currently, two official plugins are available:
+## Key Features:
+What Is My Forecast can:
+Show current weather
+Show the temperature, wind speed, etc for upcoming days
+Fallback location in case of location access being denied is Kingston JM.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### API Used:
+https://open-meteo.com/en/docs
