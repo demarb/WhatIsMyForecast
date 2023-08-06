@@ -39,7 +39,7 @@ function App() {
     const ApiCall = async ()=>{
       let res;
       if(!latitude || !longitude){
-        res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=17.997&longitude=-46.7936&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,windspeed_10m_max&current_weather=true&timezone=auto")
+        res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=17.997&longitude=-76.7936&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,windspeed_10m_max&current_weather=true&timezone=auto")
       }else{
         res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,windspeed_10m_max&current_weather=true&timezone=auto`)
       }
@@ -59,7 +59,7 @@ function App() {
       
       <Nav latitude={latitude} longitude={longitude}/>
 
-      <section className='flex flex-wrap p-5 justify-center'>
+      <section className='flex flex-wrap p-5 justify-center bg-background-pattern bg-gray-800'>
         <CurrentWeather current_weather={weatherData.current_weather} />
         <Forecast future_weather={weatherData.daily} />
         <FutureTemperature future_weather={weatherData.daily} />
