@@ -12,3 +12,6 @@ Fallback location in case of location access being denied is Kingston JM.
 
 ### API Used:
 https://open-meteo.com/en/docs
+
+### Preview:
+![App preview](./preview.png)
